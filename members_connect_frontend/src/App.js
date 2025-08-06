@@ -11,6 +11,7 @@ import Referrals from "./pages/Referrals";
 import Meetings from "./pages/Meetings";
 import Notifications from "./pages/Notifications";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import SimpleHome from "./pages/SimpleHome";
 
 // PUBLIC_INTERFACE
 function ProtectedRoute({ children }) {
@@ -36,6 +37,7 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/simple-home" element={<SimpleHome />} />
             <Route
               path="/"
               element={
